@@ -1,48 +1,49 @@
 <!DOCTYPE html>
+
 <html>
 <head>
- <title>Leaflet + Shapefile</title>
- <​meta charset="utf-8" />
- <​meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
- <!-- Leaflet -->
- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
- <​script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"><​/script>
- <!-- shpjs -->
- <​script src="https://unpkg.com/shpjs@latest/dist/shp.min.js"><​/script>
+  <title>Leaflet + Shapefile</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
- <​style>
- body, html, hashtag#map { padding: 0; margin: 0; height: 100%; width: 100%;}
- hashtag#upload-zone {
- position: absolute;
- top: 10px;
- left: 50px;
- background: rgba(255, 255, 255, 0.8);
- padding: 10px;
- border: 1px dashed hashtag#5a5a5a;
- z-index: 999;
- }
- <​/style>
+  <!-- shp.js -->
+  <script src="https://unpkg.com/shpjs@latest/dist/shp.min.js"></script>
+
+  <style>
+    html, body, #map {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
 </head>
 <body>
 
- <div id="map"></div>
- 
- <​script>
- const map = L.map('map').setView([20, 0], 2);
+  <div id="map"></div>
 
- L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
- attribution: '&copy; OpenStreetMap contributors'
- }).addTo(map);
+  <script>
+    const map = L.map('map').setView([20, 0], 2);
 
- async function loadShapefile() {
- const geojson = await shp("my-file.zip");
- const layer = L.geoJSON(geojson).addTo(map);
- map.fitBounds(layer.getBounds());
- }
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
 
- loadShapefile();
- <​/script>
+    async function loadShapefile() {
+      const geojson = await shp("my-file.zip"); // Replace with your shapefile zip path
+      const layer = L.geoJSON(geojson).addTo(map);
+      map.fitBounds(layer.getBounds());
+    }
+
+    loadShapefile();
+  </script>
 
 </body>
 </html>
+
+<!-- 
+   Adapted from Christian Lutz 
+-->
