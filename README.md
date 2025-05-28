@@ -11,7 +11,7 @@ I used Shapefile archives compressed as `.zip`, which needed to be loaded via a 
 I used Python's built-in HTTP server for this. This server makes the files accessible via HTTP, which avoids security restrictions that occur when opening files locally with file://.
 
 ```shell
-# Navegue até o diretório onde estão os arquivos .shp
+# directory where the .shp files are located
 
 cd C:\Users\JesseBurlamaque\Documents\GitHubProjects\shp2leaflet
 
