@@ -38,7 +38,7 @@
 
     // Função assíncrona para carregar um shapefile ZIP e adicioná-lo ao mapa
     async function loadShapefile() {
-      const geojson = await shp("my-file.zip"); // Replace with your shapefile zip path
+      const geojson = await shp("my-file.zip"); // shapefile zip path
       const layer = L.geoJSON(geojson).addTo(map);
       map.fitBounds(layer.getBounds());
     }
