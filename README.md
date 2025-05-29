@@ -18,8 +18,15 @@ cd C:\Users\JesseBurlamaque\Documents\GitHubProjects\shp2leaflet
 python -m http.server 8000
 ```
 
-#### In the browser
+##### In the browser
 
 After starting the server, in web browser:
 
 http://localhost:8000
+
+#### Hosting with GitHub Pages
+
+This project can be accessed directly online using GitHub Pages:
+https://jesseburlamaque.github.io/shp2leaflet/
+
+Just renamed the HTML file to index.html and turned on GitHub Pages.
