@@ -24,9 +24,21 @@ After starting the server, in web browser:
 
 http://localhost:8000
 
-#### Hosting with GitHub Pages
+#### Hosting Online
 
-This project can be accessed directly online using GitHub Pages:
-https://jesseburlamaque.github.io/shp2leaflet/
+This project is available online via:
 
-Just renamed the HTML file to index.html and turned on GitHub Pages.
+- **GitHub Pages:** [https://jesseburlamaque.github.io/shp2leaflet/](https://jesseburlamaque.github.io/shp2leaflet/)
+- **Netlify:** [https://shp2leaflet.netlify.app/](https://shp2leaflet.netlify.app/)
+
+#### Latency & Hosting Benchmark
+
+What started as a simple file viewer turned into an interesting experiment in comparing latency across different hosting platforms.
+
+This app is now being used to test response time for lightweight assets hosted on:
+
+- GitHub Pages
+- Netlify
+
+Early results focus on minimal apps, but upcoming tests will involve larger webapps to evaluate how performance scales with size and complexity.
+
