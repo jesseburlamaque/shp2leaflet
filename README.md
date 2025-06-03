@@ -42,3 +42,15 @@ This app is now being used to test response time for lightweight assets hosted o
 
 Early results focus on minimal apps, but upcoming tests will involve larger webapps to evaluate how performance scales with size and complexity.
 
+**Notebook Jupyter:** [latency_benckmark_app_v2.ipynb](https://github.com/jesseburlamaque/shp2leaflet/blob/main/latency_benckmark_app_v2.ipynb)
+
+
+**Figure 1 - Total Time to First Byte**  
+![image](img/v1-time-to-first-byte.png)
+
+**Figure 2 - Total Time Response**  
+![image](img/v1-total-time-response.png)
+
+**Figure 3 - Download Time**  
+![image](img/v1-download-time.png)
+
