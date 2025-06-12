@@ -1,4 +1,12 @@
 # shp2leaflet
+
+![Leaflet](https://img.shields.io/badge/Leaflet-199900?logo=leaflet&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![GIS](https://img.shields.io/badge/GIS-Shapefile%20Viewer-blue)
+[![Netlify](https://img.shields.io/badge/Netlify-Live-00C7B7?logo=netlify&logoColor=white)](https://shp2leaflet.netlify.app/)
+
 A geeky testbed for loading .shp files client-side using Leaflet + shp.js. “Let me quickly check this layer”
 
 **Viewr**  
